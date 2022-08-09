@@ -30,5 +30,9 @@
 }
 .sidebarListItem.active,
 .sidebarListItem:hover{
-    background-color: aquamarine;
+    background-color: rgb(16, 24, 21);
+}
+.sidebarIcon{
+    margin-right:5px;
+    font-size: 20px;
 }
