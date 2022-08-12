@@ -3,6 +3,7 @@ import "./sidebar.css";
 import {MdLineStyle,MdTimeline,MdTrendingUp,MdStorefront,MdDynamicFeed,MdOutlineMessage,MdOutlineManageAccounts,MdOutlineReportProblem} from 'react-icons/md';
 import {AiOutlineUser,AiOutlineTransaction,AiOutlineMail} from 'react-icons/ai';
 import{ImStatsBars} from 'react-icons/im';
+import { Link } from 'react-router-dom';
 const Sidebar = () => {
     return (
         <div className='sidebar'>
@@ -16,22 +17,27 @@ const Sidebar = () => {
                     <li className='sidebarListItem'>
                     <MdTimeline className='sidebarIcon'/> Analytics
                     </li>
+                    
                     <li className='sidebarListItem'>
                     <MdTrendingUp className='sidebarIcon' /> Sales
                     </li>
+                  
                 </ul>
             </div>
             <div className='sidebarMenu'>
                 <h3 className='sidebarTitle'> Quick Menu</h3>
                  
                 <ul className='sidebarList'>
+                <Link to='/users' className='link'>
                 <li className='sidebarListItem active'>
                     <AiOutlineUser className='sidebarIcon' /> Users
                     </li>
+                    </Link>
+                    <Link to='/products' className='link'> 
                     <li className='sidebarListItem'>
                     <MdStorefront className='sidebarIcon'/> Products
                     </li>
-                    
+                    </Link>
                     <li className='sidebarListItem'>
                     <AiOutlineTransaction className='sidebarIcon' /> Transactions 
                     </li>

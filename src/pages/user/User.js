@@ -3,13 +3,15 @@ import './user.css';
 import {BsPerson,BsFillCalendarEventFill} from 'react-icons/bs';
 import {MdOutlinePhoneIphone,MdLocationSearching,MdPublish}  from 'react-icons/md';
 import {AiOutlineMail}  from 'react-icons/ai';
+import { Link } from 'react-router-dom';
 export default function User() {
   return (
     <div className='user'>
        <div className="userTitleContainer">
         <h1 className="userTitle">Edit User</h1>
+        <Link to="/newUser">
         <button className="userAddButton">Create</button>
-        
+        </Link>
       </div>
       <div className="userContainer">
         <div className="userShow">
