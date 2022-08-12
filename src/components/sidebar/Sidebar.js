@@ -11,9 +11,11 @@ const Sidebar = () => {
             <div className='sidebarMenu'>
                 <h3 className='sidebarTitle'>Dashboard</h3>
                 <ul className='sidebarList'>
+                  <Link to="/"className='link'>
                 <li className='sidebarListItem active'>
                     <MdLineStyle className='sidebarIcon' /> Home
                     </li>
+                    </Link>
                     <li className='sidebarListItem'>
                     <MdTimeline className='sidebarIcon'/> Analytics
                     </li>
